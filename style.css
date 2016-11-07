@@ -562,6 +562,7 @@ html,body{
 }
 
 .gallery-contents-button.next {
+  height: 70px;
   position: absolute;
   top: 2.6em;
   right: 0;
@@ -584,7 +585,7 @@ html,body{
   content: '＞';
   height: 70px;
   position: absolute;
-  bottom: -15px;
+  bottom: 5px;
   right: 0;
   margin: auto;
   font-size: 50px;
