@@ -6,24 +6,26 @@
 }
 
 html,body{ 
-  height:100%;
-  width:100%;
-  margin-left : auto;
-  margin-right : auto;
-  font-family: "Arial Black", "Arial Bold", Gadget, sans-serif;
-  text-align : center;
+  height: 100%;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: 'Arial Black', 'Arial Bold','ヒラギノ角ゴ Std W8','Hiragino Kaku Gothic Std';
+  font-style: 62.5%;
+  text-align: center;
+  background-color: #fff;
 }
 
 /* top */
 
 #top {
   position: relative;
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
+  height: 100%;
 }
 
 .top-contents {
-  width: 100vw;
+  width: 90%;
   height: 55vmin;
   position: absolute;
   margin: auto;
@@ -67,8 +69,8 @@ html,body{
   }
 
 .menu {
-  width: 100vw;
-  margin-top: 5vmin;
+  width: 100%;
+  margin-top: 50px;
 }
 
 .menu-list {
@@ -204,8 +206,14 @@ html,body{
   height: 120px;
   background-color: #222;
   border-radius: 30px;
-  padding: 0 50px;
+  padding: 0 20px;
   margin: 0 auto;
+}
+
+@media screen and (min-width: 321px) {
+  .intro {
+    padding: 0 50px;
+  }
 }
 
 .intro::before {
@@ -235,7 +243,6 @@ html,body{
 .serif-item {
   width: 70vmin;
   height: 120px;
-  /*background-color: #222;*/
 }
 
 .serif-subject {
@@ -245,10 +252,17 @@ html,body{
   text-align: center;
   vertical-align: middle;
   font-family: sans-serif;
-  font-size: 14px;
+  font-size: 12px;
   line-height: 20px;
   color: #FFF;
 }
+
+@media screen and (min-width: 321px) {
+  .serif-subject {
+    font-size: 14px;
+  }
+}
+
 
 .more-button {
   position: absolute;
@@ -278,8 +292,8 @@ html,body{
 }
 
 .gallery-contents {
-  width: 800px;
-  height: 600px;
+  width: 300px;
+  height: 400px;
   position: absolute;
   top: 0;
   left: 0;
@@ -288,14 +302,21 @@ html,body{
   margin: auto;
 }
 
+@media screen and (min-width: 480px) {
+  .gallery-contents {
+    width: 100%;
+    height: 100%;
+  }
+}
+
 .gallery-title {
   display: block;
   position: relative;
-  margin: auto;
   font-size: 16vmin;
   color: #f0f;
   -webkit-user-select: none;
   user-select: none;
+  margin-bottom: 30px;
 }
 
 .gallery-title::before {
@@ -323,15 +344,32 @@ html,body{
 }
 
 .gallery-container {
-  width: 800px;
-  height: 400px;
-  position: absolute;
+  width: 290px;
+  height: 300px;
+  position: relative;
+  top: 0;
   bottom: 0;
+  margin: auto;
+}
+
+@media screen and (min-width: 480px) {
+  .gallery-container {
+    width: 500px;
+    height: 470px;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .gallery-container {
+    width: 800px;
+    height: 470px;
+    margin: 0 auto;
+  }
 }
 
 .gallery-wrapper {
-  width: 600px;
-  height: 400px;
+  width: 180px;
+  height: 300px;
   position: absolute;
   left: 0;
   right: 0;
@@ -339,46 +377,140 @@ html,body{
   overflow: hidden;
 }
 
+@media screen and (min-width: 480px) {
+  .gallery-wrapper {
+    width: 300px;
+    height: 470px;
+    top: 0;
+    bottom: 0;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .gallery-wrapper {
+    width: 600px;
+    height: 400px;
+  }
+}
+
+
 .gallery-list {
-  height: 400px;
-  vertical-align: middle;
-  position: absolute;
-  top: 0;
-  left: 0;
-  transition: left .6s ease-in-out;
+    height: 300px;
+    vertical-align: middle;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: left .6s ease-in-out;
+}
+
+@media screen and (min-width: 480px){
+  .gallery-list {
+    height: 480px;
+  }
+}
+
+@media screen and (min-width: 800px){
+  .gallery-list {
+    height: 400px;
+  }
 }
 
 .gallery-list-item {
   float: left;
-  width: 600px;
+  width: 180px;
+}
+
+@media screen and (min-width: 480px){
+  .gallery-list-item {
+    width: 300px;
+  }
+}
+
+@media screen and (min-width: 800px){
+  .gallery-list-item {
+    width: 600px;
+  }
 }
 
 .gallery-list-container {
   float: left;
   position: relative;
   overflow: hidden;
-  width: 190px;
-  height: 400px;
-  margin-right: 15px;
+  width: 180px;
+  height: 90px;
+  margin-bottom: 15px;
+}
+
+@media screen and (min-width: 480px) {
+  .gallery-list-container {
+    width: 300px;
+    height: 150px;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .gallery-list-container {
+    width: 190px;
+    height: 400px;
+    margin-bottom: 0;
+  }
 }
 
 .gallery-list-container:last-child {
-  margin-right: 0;
+  margin-bottom: 0;
+}
+
+@media screen and (min-width: 800px) {
+  .gallery-list-container:not(:last-child) {
+    margin-right: 15px;
+  }
 }
 
 .gallery-list-img {
   position: absolute;
   top: 50%;
   left: 50%;
-  width: auto;
-  height: 100%;
+  width: 100%;
+  height: auto;
   -webkit-transform: translate(-50%, -50%);
-  filter: grayscale(100%);
-  transition: 0.8s;
+  transform: translate(-50%, -50%);
+  -webkit-transition: all 0.1s linear;
+  transition: all 0.1s linear;
+}
+
+@media screen and (min-width: 480px) {
+  .gallery-list-img {
+    position: absolute;
+    width: 100%;
+    height: auto;
+  }
+}
+
+
+@media screen and (min-width: 800px) {
+  .gallery-list-img {
+    width: auto;
+    height: 100%;
+  }
 }
 
 .gallery-list-img:hover {
-  filter: grayscale(0%);
+  width: 110%;
+  height: auto;
+}
+
+@media screen and (min-width: 480px) {
+  .gallery-list-img:hover {
+    width: 110%;
+    height: auto;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .gallery-list-img:hover {
+    width: auto;
+    height: 110%;
+  }
 }
 
 .gallery-contents-button {
@@ -390,50 +522,82 @@ html,body{
 
 .gallery-contents-button.prev {
   position: absolute;
-  top: 40%;
+  top: 2.6em;
   left: 0;
-  width: 100px;
-  height: 100px;
-  font-size: 100px;
+  height: 70px;
+  font-size: 50px;
   color: #0ff;
-  mix-blend-mode : multiply;
+  mix-blend-mode: multiply;
+}
+
+@media screen and (min-width: 480px) {
+  .gallery-contents-button.prev {
+    top: 40%;
+    left: 0;
+    width: 100px;
+    height: 100px;
+    font-size: 100px;
+    margin-right: 0;
+  }
 }
 
 .gallery-contents-button.prev::after {
   content: '＜';
-  height: 100px;
+  height: 70px;
   position: absolute;
-  bottom: 8px;
-  left: 0;
+  bottom: 5px;
+  left: 0px;
   right: 0;
   margin: auto;
-  font-size: 100px;
-  mix-blend-mode : multiply;
+  font-size: 50px;
+  mix-blend-mode: multiply;
   color: #f00;
+}
+
+@media screen and (min-width: 480px) {
+  .gallery-contents-button.prev::after {
+    height: 100px;
+    font-size: 100px;
+  }
 }
 
 .gallery-contents-button.next {
   position: absolute;
-  top: 40%;
+  top: 2.6em;
   right: 0;
-  width: 100px;
-  height: 100px;
-  font-size: 100px;
+  font-size: 50px;
   color: #0ff;
-  mix-blend-mode : multiply;
+  mix-blend-mode: multiply;
+}
+
+@media screen and (min-width: 480px) {
+  .gallery-contents-button.next {
+    top: 40%;
+    width: 100px;
+    height: 100px;
+    font-size: 100px;
+    margin-right: 0;
+  }
 }
 
 .gallery-contents-button.next::after {
   content: '＞';
-  height: 100px;
+  height: 70px;
   position: absolute;
-  bottom: 8px;
-  left: 0;
+  bottom: -15px;
   right: 0;
   margin: auto;
-  font-size: 100px;
-  mix-blend-mode : multiply;
+  font-size: 50px;
+  mix-blend-mode: multiply;
   color: #f00;
+}
+
+@media screen and (min-width: 480px) {
+  .gallery-contents-button.next::after {
+    height: 100px;
+    bottom: 5px;
+    font-size: 100px;
+  }
 }
 
 .gallery-contents-button:active::after {
@@ -484,6 +648,39 @@ html,body{
   height: 100%;
 }
 
+.skill-container {
+  position: absolute;
+  width: 340px;
+  height: 390px;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+@media screen and (min-width: 320px) {
+  .skill-container {
+    width: 400px;
+    height: 400px;
+  }
+}
+
+@media screen and (min-width: 380px) {
+  .skill-container {
+    width: 100%;
+    height: 460px;
+  }
+}
+
+@media screen and (min-width: 499px) {
+  .skill-container {
+    width: 100%;
+    height: auto;
+  }
+}
+
+
 .skill-title {
   display: block;
   position: relative;
@@ -491,13 +688,18 @@ html,body{
   left: 0;
   right: 0;
   width: 100vw;
-  margin: auto;
+  margin-bottom: 30px;
   font-size: 16vmin;
   color: #f0f;
   -webkit-user-select: none;
   user-select: none;
 }
 
+@media screen and (min-width: 320px) {
+  .skill-title {
+    margin-bottom: 0;
+  }
+}
 .skill-title::before {
   content: 'Skill';
   position: absolute;
@@ -523,35 +725,96 @@ html,body{
 }
 
 .skill-list {
+  width: 100%;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
   list-style: none;
+}
+
+@media screen and (min-width: 800px) {
+  .skill-list {
+    width: 800px;
+  }
 }
 
 .skill-scale {
   display: inline-block;
   box-sizing: border-box;
-  width: 50px;
-  height: 400px;
-  margin-top: 50px;
-  margin-right: 30px;
+  width: 30px;
+  height: 300px;
+  margin-right: 12px;
   border-top: solid 5px #222;
   border-left: solid 5px #222;
   border-bottom: solid 5px #222;
-  background:
-    repeating-linear-gradient(to bottom, transparent, transparent 90%, #222 90%, #222),
-    repeating-linear-gradient(to bottom, transparent, transparent 98%, #222 98%, #222);
-  background:
-    -webkit-repeating-linear-gradient(top, transparent, transparent 90%, #222 90%, #222),
-    -webkit-repeating-linear-gradient(top, transparent, transparent 98%, #222 98%, #222);
+  background: repeating-linear-gradient(to bottom, transparent, transparent 90%, #222 90%, #222), repeating-linear-gradient(to bottom, transparent, transparent 98%, #222 98%, #222);
+  background: -webkit-repeating-linear-gradient(top, transparent, transparent 90%, #222 90%, #222), -webkit-repeating-linear-gradient(top, transparent, transparent 98%, #222 98%, #222);
   background-repeat: repeat-y;
-  background-size: 25px 40px, 50px 200px;
+  background-size: 15px 30px, 50px 150px;
+}
+
+@media screen and (min-width: 380px) {
+  .skill-scale {
+    height: 400px;
+    margin-top: 50px;
+    background-size: 15px 40px, 50px 200px;
+  }
+}
+
+
+@media screen and (min-width: 800px) {
+  .skill-scale {
+    width: 50px;
+    margin-right: 30px;
+    background-size: 25px 40px, 50px 200px;
+  }
 }
 
 .skill-list-item {
   position: relative;
   display: inline-block;
-  width: 80px;
-  height: 400px;
-  margin: 50px 20px 0 0;
+  width: 20px;
+  height: 300px;
+  margin: 0 10px 0 0;
+}
+
+.photoshop {
+  height: 270px;
+}
+
+.illustrator,
+.sketch,
+.html5,
+.css3 {
+  height: 240px;
+}
+
+.jquery {
+  height: 150px;
+}
+
+@media screen and (min-width: 380px) {
+  .skill-list-item {
+    position: relative;
+    display: inline-block;
+    width: 40px;
+    height: 400px;
+    margin: 50px 10px 0 0;
+  }
+}
+
+@media screen and (min-width: 500px) {
+  .skill-list-item {
+    width: 50px;
+    margin: 50px 12px 0 0;
+  }
+}
+
+@media screen and (min-width: 700px) {
+  .skill-list-item {
+    width: 80px;
+  }
 }
 
 .skill-list-name {
@@ -560,10 +823,10 @@ html,body{
   position: absolute;
   width: 200px;
   bottom: 100px;
-  left: -80px;
+  left: -90px;
   text-align: end;
   font-family: sans-serif;
-  font-size: 36px;
+  font-size: 16px;
   color: #fff;
   -webkit-transform: rotate(90deg);
   -moz-transform: rotate(90deg);
@@ -571,6 +834,14 @@ html,body{
   -o-transform: rotate(90deg);
   transform: rotate(90deg);
 }
+
+@media screen and (min-width: 380px) {
+  .skill-list-name {
+    left: -80px;
+    font-size: 36px;
+  }
+}
+
 
 /* Bio */
 
@@ -580,14 +851,40 @@ html,body{
   height: 100%;
 }
 
+.bio-contents {
+  width: 300px;
+  height: 370px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  font-size: 0;
+}
+
+@media screen and (min-width: 480px) {
+  .bio-contents {
+      width: 420px;
+      height: 510px;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .bio-contents {
+      width: 100%;
+      height: auto;
+  }
+}
+
 .bio-title {
   display: block;
   position: relative;
   top: 0;
   left: 0;
   right: 0;
-  width: 100vw;
-  margin: auto;
+  width: 100%;
+  margin-bottom: 30px;
   font-size: 16vmin;
   color: #f0f;
   -webkit-user-select: none;
@@ -618,35 +915,51 @@ html,body{
   color: #0ff;
 }
 
-.bio-contents {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  margin: auto;
-  width: 100%;
-  height: 400px;
-  font-size: 0;
+.bio-list-item {
+    display: inline-block;
+    width: 70px;
+    height: 70px;
+    margin-bottom: 30px;
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+    -webkit-perspective: 1000;
+    perspective: 1000;
+}
+
+@media screen and (min-width: 480px) {
+  .bio-list-item {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 40px;
+  }
 }
 
 
-.bio-list-item {
-  display: inline-block;
-  width: 120px;
-  height: 120px;
-  margin-bottom: 50px;
-  -webkit-transform: rotate(45deg);
-  -moz-transform: rotate(45deg);
-  -ms-transform: rotate(45deg);
-  -o-transform: rotate(45deg);
-  transform: rotate(45deg);
-  -webkit-perspective: 1000;
-  perspective: 1000;
+@media screen and (min-width: 800px) {
+  .bio-list-item {
+    width: 120px;
+    height: 120px;
+    margin-bottom: 50px;
+  }
 }
 
 .bio-list-item:not(:last-child) {
-  margin-right: 50px;
+    margin-right: 30px;
+}
+
+@media screen and (min-width: 480px) {
+  .bio-list-item:not(:last-child) {
+    margin-right: 40px;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .bio-list-item:not(:last-child) {
+    margin-right: 50px;
+  }
 }
 
 .inner {
@@ -659,41 +972,84 @@ html,body{
 
 .front,
 .back {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 120px;
-  height: 120px;
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
-  vertical-align: middle;
-  color: #fff;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 70px;
+    height: 70px;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    vertical-align: middle;
+    color: #fff;
+}
+
+@media screen and (min-width: 480px) {
+  .front,
+  .back {
+    width: 100px;
+    height: 100px;
+  }
+
+}
+
+@media screen and (min-width: 800px) {
+  .front,
+  .back {
+    width: 120px;
+    height: 120px;
+  }
 }
 
 .front {
   background-color: #222;
-  font-size: 16px;
+  font-size: 12px;
+}
+
+@media screen and (min-width: 480px) {
+  .front {
+    font-size: 16px;
+  }
 }
 
 .back {
-  background-color: #222;
-  font-family: sans-serif;
-  font-size: 10px;
-  line-height: 14px;
-  -webkit-transform: rotateY(180deg);
-  transform: rotateY(180deg);
+    background-color: #222;
+    font-family: sans-serif;
+    font-size: 10px;
+    line-height: 14px;
+    -webkit-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+}
+
+@media screen and (min-width: 480px) {
+  .back {
+    font-size: 12px;
+  }
 }
 
 .inner-text {
   display: table-cell;
   vertical-align: middle;
-  height: 120px;
-  width: 120px;
+  height: 70px;
+  width: 70px;
   -webkit-transform: rotate(-45deg);
   -moz-transform: rotate(-45deg);
   -ms-transform: rotate(-45deg);
   -o-transform: rotate(-45deg);
   transform: rotate(-45deg);
+}
+
+@media screen and (min-width: 480px) {
+  .inner-text {
+    height: 100px;
+    width: 100px;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .inner-text {
+    height: 120px;
+    width: 120px;
+  }
 }
 
 .bio-list-item:hover .inner {
@@ -714,6 +1070,30 @@ html,body{
   height: 100%;
 }
 
+.contact-wrapper {
+  width: 300px;
+  height: 420px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+@media screen and (min-width: 480px) {
+  .contact-wrapper {
+    width: 480px;
+    height: 580px;
+  }
+}
+
+@media screen and (min-width: 700px) {
+  .contact-wrapper {
+    width: 100%;
+    height: auto;
+  }
+}
 
 .contact-title {
   display: block;
@@ -721,13 +1101,14 @@ html,body{
   top: 0;
   left: 0;
   right: 0;
-  width: 100vw;
-  margin: auto;
+  width: 100%;
+  margin-bottom: 30px;
   font-size: 16vmin;
   color: #f0f;
   -webkit-user-select: none;
   user-select: none;
 }
+
 
 .contact-title::before {
   content: 'Contact';
@@ -754,8 +1135,8 @@ html,body{
 }
 
 .contact-list {
-  width: 100%;
-  height: 152px;
+  width: 300px;
+  height: 230px;
   position: absolute;
   top: 0;
   left: 0;
@@ -764,22 +1145,75 @@ html,body{
   margin: auto;
 }
 
+@media screen and (min-width: 480px) {
+  .contact-list {
+    width: 400px;
+    height: 310px;
+  }
+}
+
+@media screen and (min-width: 700px) {
+  .contact-list {
+    width: 650px;
+    height: 140px;
+  }
+}
+
+.contact-list-container {
+  float: left;
+  width: 50%;
+}
+
+@media screen and (max-width: 699px) {
+  .contact-list-container:not(:nth-last-child(-n+2)) {
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .contact-list-container {
+    float: left;
+    width: 50%;
+  }
+}
+
+@media screen and (min-width: 700px) {
+  .contact-list-container {
+    float: left;
+    width: 25%;
+  }
+}
+
 .contact-item {
   display: inline-block;
   position: relative;
   left: 0;
   right: 0;
   margin: auto;
-  width: 140px;
-  height: 140px;
-  border-radius: 70px;
+  width: 100px;
+  height: 100px;
+  border-radius: 50px;
   mix-blend-mode : multiply;
   background-color: #f00;
   vertical-align: middle;
 }
 
+@media screen and (min-width: 480px) {
+  .contact-item {
+    width: 140px;
+    height: 140px;
+    border-radius: 70px;
+  }
+}
+
 .contact-item:not(:last-child) {
   margin-right: 30px;
+}
+
+@media screen and (min-width: 700px) {
+  .contact-item:not(:last-child) {
+    margin-right: 30px;
+  }
 }
 
 .contact-item::after {
@@ -787,9 +1221,9 @@ html,body{
   position: absolute;
   top: 0;
   left: 0;
-  width: 140px;
-  height: 140px;
-  border-radius: 70px;
+  width: 100px;
+  height: 100px;
+  border-radius: 50px;
   margin: auto;
   mix-blend-mode : multiply;
   background-color: #0ff;
@@ -801,25 +1235,50 @@ html,body{
           transition: top, left .25s ease;
 }
 
+@media screen and (min-width: 480px) {
+  .contact-item::after {
+    width: 140px;
+    height: 140px;
+    border-radius: 70px;
+  }
+}
+
 .contact-item:hover::after {
   content: '';
   position: absolute;
   top: 12px;
   left: 12px;
-  width: 140px;
-  height: 140px;
-  border-radius: 70px;
+  width: 100px;
+  height: 100px;
+  border-radius: 50px;
   margin: auto;
   mix-blend-mode : multiply;
   background-color: #0ff;
   z-index:-2;
 }
 
+@media screen and (min-width: 480px) {
+  .contact-item:hover::after {
+    width: 140px;
+    height: 140px;
+    border-radius: 70px;
+  }
+}
+
 .contact-item-link {
   display: block;
-  width: 140px;
-  height: 140px;
-  border-radius: 70px;
+  width: 100px;
+  height: 100px;
+  border-radius: 50px;
+}
+
+@media screen and (min-width: 480px) {
+  .contact-item-link {
+    display: block;
+    width: 140px;
+    height: 140px;
+    border-radius: 70px;
+  }
 }
 
 .contact-item-img {
