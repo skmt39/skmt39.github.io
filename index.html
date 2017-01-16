@@ -9,283 +9,213 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-  <!-- top -->
-  <header id="top">
-    <div class="top-contents">
-      <h1 class="logo">39</h1>
-      <ul class="menu">
-        <li class="menu-list">
-          <a href="#about">About me</a>
-        </li>
-        <li class="menu-list">
-          <a href="#gallery">Gallery</a>
-        </li>
-        <li class="menu-list">
-          <a href="#skill">Skill</a>
-        </li>
-        <li class="menu-list">
-          <a href="#bio">Bio</a>
-        </li>
-        <li class="menu-list">
-          <a href="#contact">Contact</a>
-        </li>
-      </ul>
-    </div>
-
-  </header>
-
-  <!-- About -->
-  <section id="about">
-    <div class="about-contents">
-      <h1 class="about-title">About me</h1>
-        <div class="circle-frame">
-          <img src="img/profile/sakumoto.png" alt="sakumoto" class="profile-img">
+  <div class="first-view">
+    <div id="top" class="top-contents">
+      <div class="logo">
+        <img src="img/logo.png" alt="logo" width="166" height="108">
+      </div>
+      <div id="particles-js"></div>
+      <div class="menu">
+        <div class="menu-frame"></div>
+        <div id="menu-btn">
+          <span id="menu-btn-icon"></span>
         </div>
-        <article class="intro">
-          <div class="serif-wrapper">
-            <ul class="serif-list">
-              <li class="serif-item">
-                <p class="serif-subject">
-                  佐久本です。尖ったものが好きです。<br>
-                  絵でも服でも料理でも、『作る』という事が好きです。
-                </p>
+        <nav class="menu-area">
+          <div class="menu-wrapper">
+            <ul class="menu-list">
+              <li class="menu-list-item">
+                <a href="#top"><img class="menu-list-item-img" src="img/menu-top.png" alt="top" width="80" height="75"></a>
               </li>
-              <li class="serif-item">
-                <p class="serif-subject">
-                  作り出せるものの領域をひろげたくて<br>
-                  エンジニアを志しました。
-                </p>
+              <li class="menu-list-item">
+                <a href="#about"><img class="menu-list-item-img" src="img/menu-about.png" alt="about" width="156" height="60"></a>
               </li>
-              <li class="serif-item">
-                <p class="serif-subject">
-                  10月生まれの22歳です。<br>
-                  沖縄出身で、今は都内に住んでいます。
-                </p>
+              <li class="menu-list-item">
+                <a href="#gallery"><img class="menu-list-item-img" src="img/menu-gallery.png" alt="gallery" width="180" height="75"></a>
               </li>
-              <li class="serif-item">
-                <p class="serif-subject">
-                  動物と漫画とアニメとゲームとお菓子があれば元気になります。
-                </p>
+              <li class="menu-list-item">
+                <a href="#skill"><img class="menu-list-item-img" src="img/menu-skill.png" alt="skill" width="101" height="60"></a>
               </li>
-              <li class="serif-item">
-                <p class="serif-subject">
-                  音楽ゲームが大好きでゲームセンターに通っています。<br>
-                  UFOキャッチャーも得意です。
-                </p>
+              <li class="menu-list-item">
+                <a href="#contact"><img class="menu-list-item-img" src="img/menu-contact.png" alt="contact" width="215" height="60"></a>
               </li>
-              <li class="serif-item">
-                <p class="serif-subject">
-                  癖のあるバンドが好きです。<br>
-                  うるさい音楽を好みます。
-                </p>
-              </li>
-            </ul>
-          <div class="more-button">▼ NEXT</div>
-      </article>
-    </div>
-  </section>
-
-  <!-- Gallery -->
-  <section id="gallery">
-    <div class="gallery-contents">
-      <h1 class="gallery-title">Gallery</h1>
-      <div class="gallery-container">
-        <div class="gallery-contents-button prev" data-ctrl="prev">＜</div>
-          <div class="gallery-wrapper">
-            <ul class="gallery-list">
-            <li class="gallery-list-item clearfix">
-              <div class="gallery-list-container">
-                <a href="img/album/purple.JPG" class="gallery-modal-link"><img class="gallery-list-img" src="img/album/purple_thumbnail.png" alt=""></a>
-              </div>
-              <div class="gallery-list-container">
-                <a href="img/album/soranaki.PNG" class="gallery-modal-link">
-                <img class="gallery-list-img" src="img/album/soranaki_thumbnail.png" alt=""></a>
-              </div>
-              <div class="gallery-list-container">
-                <a href="img/album/red.JPG" class="gallery-modal-link">
-                <img class="gallery-list-img" src="img/album/red_thumbnail.png" alt=""></a>
-              </div>
-            </li>
-            <li class="gallery-list-item clearfix">
-              <div class="gallery-list-container">
-                <a href="img/album/mogwai_twetter_header.jpg" class="gallery-modal-link"><img class="gallery-list-img" src="img/album/mogwai_twetter_header_thumbnail.png" alt=""></a>
-              </div>
-              <div class="gallery-list-container">
-                <a href="img/album/hoge.png" class="gallery-modal-link">
-                  <img class="gallery-list-img" src="img/album/hoge_thumbnail.png" alt="">
-                </a>
-              </div>
-              <div class="gallery-list-container">
-                <a href="img/album/leaflet.JPG" class="gallery-modal-link">
-                  <img class="gallery-list-img" src="img/album/leaflet_thumbnail.png" alt="">
-                </a>
-              </div>
-            </li>
-            <li class="gallery-list-item clearfix">
-              <div class="gallery-list-container">
-                <a href="img/album/exhibit.jpg" class="gallery-modal-link">
-                  <img class="gallery-list-img" src="img/album/exhibit_thumbnail.png" alt="">
-                </a>
-              </div>
-              <div class="gallery-list-container">
-                <a href="img/album/nabeliwo.me.png" class="gallery-modal-link">
-                  <img class="gallery-list-img" src="img/album/nabeliwo.me_thumbnail.png" alt="">
-                </a>
-              </div>
-              <div class="gallery-list-container">
-                <a href="img/album/laundry.JPG" class="gallery-modal-link">
-                  <img class="gallery-list-img" src="img/album/laundry_thumbnail.png" alt="">
-                </a>
-              </div>
-            </li>
-            <li class="gallery-list-item clearfix">
-              <div class="gallery-list-container">
-                <a href="img/album/left.JPG" class="gallery-modal-link">
-                  <img class="gallery-list-img" src="img/album/left_thumbnail.png" alt="">
-                </a>
-              </div>
-              <div class="gallery-list-container">
-                <a href="img/album/center.JPG" class="gallery-modal-link">
-                  <img class="gallery-list-img" src="img/album/center_thumbnail.png" alt="">
-                </a>
-              </div>
-              <div class="gallery-list-container">
-                <a href="img/album/right.JPG" class="gallery-modal-link">
-                  <img class="gallery-list-img" src="img/album/right_thumbnail.png" alt="">
-                </a>
-              </div>
-            </li>
-            <li class="gallery-list-item clearfix">
-              <div class="gallery-list-container">
-                <a href="img/album/skin.JPG" class="gallery-modal-link">
-                  <img class="gallery-list-img" src="img/album/skin_thumbnail.png" alt="">
-                </a>
-              </div>
-              <div class="gallery-list-container">
-                <a href="img/album/melt.JPG" class="gallery-modal-link">
-                  <img class="gallery-list-img" src="img/album/melt_thumbnail.png" alt="">
-                </a>
-              </div>
-              <div class="gallery-list-container">
-                <a href="img/album/flower.JPG" class="gallery-modal-link">
-                  <img class="gallery-list-img" src="img/album/flower_thumbnail.png" alt="">
-                </a>
-              </div>
-            </li>
             </ul>
           </div>
-        <div class="gallery-contents-button next" data-ctrl="next">＞</div>
+        </nav>
       </div>
     </div>
-  </section>
 
-  <!-- skill -->
-  <section id="skill" class="claerfix">
-  <div class="skill-container">
-    <h1 class="skill-title">Skill</h1>
-      <ul class="skill-list">
-        <li class="skill-scale"></li>
-        <li class="skill-list-item photoshop">
-          <p class="skill-list-name">Photoshop</p>
+    <div id="about" class="about-contents">
+      <div class="about-wrapper">
+        <h1 class="title">
+          <img src="img/about.png" alt="about" width="140" height="52">
+        </h1>
+        <div class="frame">
+          <img class="profile-img" src="img/me.png" alt="sakumoto" width="220" height="220">
+        </div>
+        <div class="intro">
+          <img class="name-img" src="img/ss.png" alt="shokosakumoto" width="225" height="29">
+          <p class="subject">
+            1993.10.17 沖縄生まれ<br>
+            作る事が好き。
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="gallery" class="gallery-contents">
+
+    <div class="gallery-container">
+      <h1 class="title"><img src="img/gallery.png" alt="gallery" width="157" height="66"></h1>
+      <div class="gallery-contents-button prev" data-ctrl="prev">◀︎</div>
+      <div class="gallery-wrapper">
+        <ul class="gallery-list">
+          <li class="gallery-list-item clearfix">
+            <div class="gallery-list-container">
+              <a href="img/album/purple.JPG" class="gallery-modal-link"><img class="gallery-list-img" src="img/album/purple_thumbnail.png" alt=""></a>
+            </div>
+            <div class="gallery-list-container">
+              <a href="img/album/soranaki.PNG" class="gallery-modal-link">
+              <img class="gallery-list-img" src="img/album/soranaki_thumbnail.png" alt=""></a>
+            </div>
+            <div class="gallery-list-container">
+              <a href="img/album/red.JPG" class="gallery-modal-link">
+              <img class="gallery-list-img" src="img/album/red_thumbnail.png" alt=""></a>
+            </div>
+          </li>
+        <li class="gallery-list-item clearfix">
+          <div class="gallery-list-container">
+            <a href="img/album/mogwai_twetter_header.jpg" class="gallery-modal-link"><img class="gallery-list-img" src="img/album/mogwai_twetter_header_thumbnail.png" alt=""></a>
+          </div>
+          <div class="gallery-list-container">
+            <a href="img/album/hoge.png" class="gallery-modal-link">
+              <img class="gallery-list-img" src="img/album/hoge_thumbnail.png" alt="">
+            </a>
+          </div>
+          <div class="gallery-list-container">
+            <a href="img/album/leaflet.JPG" class="gallery-modal-link">
+              <img class="gallery-list-img" src="img/album/leaflet_thumbnail.png" alt="">
+            </a>
+          </div>
         </li>
-        <li class="skill-list-item illustrator">
-          <p class="skill-list-name">Illustrator</p>
+        <li class="gallery-list-item clearfix">
+          <div class="gallery-list-container">
+            <a href="img/album/exhibit.jpg" class="gallery-modal-link">
+              <img class="gallery-list-img" src="img/album/exhibit_thumbnail.png" alt="">
+            </a>
+          </div>
+          <div class="gallery-list-container">
+            <a href="img/album/nabeliwo.me.png" class="gallery-modal-link">
+              <img class="gallery-list-img" src="img/album/nabeliwo.me_thumbnail.png" alt="">
+            </a>
+          </div>
+          <div class="gallery-list-container">
+            <a href="img/album/laundry.JPG" class="gallery-modal-link">
+              <img class="gallery-list-img" src="img/album/laundry_thumbnail.png" alt="">
+            </a>
+          </div>
         </li>
-        <li class="skill-list-item sketch">
-          <p class="skill-list-name">Sketch</p>
+        <li class="gallery-list-item clearfix">
+          <div class="gallery-list-container">
+            <a href="img/album/left.JPG" class="gallery-modal-link">
+              <img class="gallery-list-img" src="img/album/left_thumbnail.png" alt="">
+            </a>
+          </div>
+          <div class="gallery-list-container">
+            <a href="img/album/center.JPG" class="gallery-modal-link">
+              <img class="gallery-list-img" src="img/album/center_thumbnail.png" alt="">
+            </a>
+          </div>
+          <div class="gallery-list-container">
+            <a href="img/album/right.JPG" class="gallery-modal-link">
+              <img class="gallery-list-img" src="img/album/right_thumbnail.png" alt="">
+            </a>
+          </div>
         </li>
-        <li class="skill-list-item html5">
-          <p class="skill-list-name">HTML5</p>
+        <li class="gallery-list-item clearfix">
+          <div class="gallery-list-container">
+            <a href="img/album/skin.JPG" class="gallery-modal-link">
+              <img class="gallery-list-img" src="img/album/skin_thumbnail.png" alt="">
+            </a>
+          </div>
+          <div class="gallery-list-container">
+            <a href="img/album/melt.JPG" class="gallery-modal-link">
+              <img class="gallery-list-img" src="img/album/melt_thumbnail.png" alt="">
+            </a>
+          </div>
+          <div class="gallery-list-container">
+            <a href="img/album/flower.JPG" class="gallery-modal-link">
+              <img class="gallery-list-img" src="img/album/flower_thumbnail.png" alt="">
+            </a>
+          </div>
         </li>
-        <li class="skill-list-item css3">
-          <p class="skill-list-name">CSS3</p>
+        </ul>
+      </div>
+      <div class="gallery-contents-button next" data-ctrl="next">▶︎</div>
+    </div>
+  </div>
+
+
+  <div id="skill" class="skill-contents">
+    <div class="skill-contents-wrapper">
+      <h1 class="title"><img src="img/skill.png" alt="skill" width="90" height="52"></h1>
+      <ul class="skill-list clearfix">
+        <li class="skill-list-item">
+          <div class="skill-frame">
+            <div class="skill-icon">
+              <img class="skill-icon-img" src="img/skill_icon1.png" alt="skill1" width="80" height="80">
+            </div>
+          </div>
+          <img class="skill-rank" src="img/skill_rank4.png" alt="rank4" width="140" height="24">
         </li>
-        <li class="skill-list-item jquery">
-          <p class="skill-list-name">jQuery</p>
+        <li class="skill-list-item">
+          <div class="skill-frame">
+            <div class="skill-icon">
+              <img class="skill-icon-img" src="img/skill_icon2.png" alt="skill2" width="80" height="80">
+            </div>
+          </div>
+          <img class="skill-rank" src="img/skill_rank3.png" alt="rank4" width="140" height="24">
+        </li>
+        <li class="skill-list-item">
+          <div class="skill-frame">
+            <div class="skill-icon">
+              <img class="skill-icon-img" src="img/skill_icon3.png" alt="skill3" width="95" height="85">
+            </div>
+          </div>
+          <img class="skill-rank" src="img/skill_rank3.png" alt="rank4" width="140" height="24">
+        </li>
+        <li class="skill-list-item">
+          <div class="skill-frame">
+            <div class="skill-icon">
+              <img class="skill-icon-img" src="img/skill_icon4.png" alt="skill4" width="82" height="90">
+            </div>
+          </div>
+          <img class="skill-rank" src="img/skill_rank2.png" alt="rank4" width="140" height="24">
+        </li>
+        <li class="skill-list-item">
+          <div class="skill-frame">
+            <div class="skill-icon">
+              <img class="skill-icon-img" src="img/skill_icon5.png" alt="skill5" width="82" height="115">
+            </div>
+          </div>
+          <img class="skill-rank" src="img/skill_rank4.png" alt="rank4" width="140" height="24">
+        </li>
+        <li class="skill-list-item">
+          <div class="skill-frame">
+            <div class="skill-icon">
+              <img class="skill-icon-img" src="img/skill_icon6.png" alt="skill6" width="82" height="115">
+            </div>
+          </div>
+          <img class="skill-rank" src="img/skill_rank3.png" alt="rank4" width="140" height="24">
         </li>
       </ul>
     </div>
-  </section>
+  </div>
 
-  <!-- Bio -->
-  <section id="bio">
-    <article class="bio-contents">
-    <h1 class="bio-title">Bio</h1>
-      <ul class="bio-list">
-        <li class="bio-list-item">
-          <div class="inner">
-            <div class="front">
-              <p class="inner-text">1993.10</p>
-            </div>
-            <div class="back">
-              <p class="inner-text">沖縄に<br>生まれる。</p>
-            </div>
-          </div>
-        </li>
-        <li class="bio-list-item">
-          <div class="inner">
-            <div class="front">
-              <p class="inner-text">2009.04</p>
-            </div>
-            <div class="back">
-              <p class="inner-text">高校で<br>服飾を学ぶ。
-              </p>
-            </div>
-          </div>
-        </li>
-        <li class="bio-list-item bio-list-blank"></li>
-      </ul>
-      <ul class="bio-list">
-        <li class="bio-list-item">
-          <div class="inner">
-            <div class="front">
-              <p class="inner-text">2012.04</p>
-            </div>
-            <div class="back">
-              <p class="inner-text">高校卒業後、<br>上京。</p>
-            </div>
-          </div>
-        </li>
-        <li class="bio-list-item">
-          <div class="inner">
-            <div class="front"><p class="inner-text">2015.03</p></div>
-            <div class="back"><p class="inner-text">
-            ECの立ち上げと<br>運営に携わる。</p>
-            </div>
-          </div>
-        </li>
-        <li class="bio-list-item">
-          <div class="inner">
-            <div class="front"><p class="inner-text">2015.07</p></div>
-            <div class="back"><p class="inner-text">
-            転職し<br>エンジニアを<br>目指す。</p></div>
-          </div>
-        </li>
-      </ul>
-      <ul class="bio-list">
-        <li class="bio-list-item bio-list-blank"></li>
-        <li class="bio-list-item">
-          <div class="inner">
-            <div class="front"><p class="inner-text">2015.10</p></div>
-            <div class="back"><p class="inner-text">
-            SESとして<br>現場へ。<br>品質管理を担当。</p></div>
-          </div>
-        </li>
-        <li class="bio-list-item">
-          <div class="inner">
-            <div class="front"><p class="inner-text">Current</p></div>
-            <div class="back"><p class="inner-text">
-            修行中。</div>
-        </li>
-      </ul>
-    </article>
-  </section>
 
-  <!-- contact -->
-  <section id="contact">
+  <div id="contact" class="contact-contents">
     <div class="contact-wrapper">
-      <h1 class="contact-title">Contact</h1>
+      <h1 class="title"><img src="img/contact.png" alt="contact" width="190" height="52"></h1>
       <ul class="contact-list">
         <div class="contact-list-container">
           <li class="contact-item">
@@ -317,22 +247,17 @@
         </div>
       </ul>
     </div>
-  </section>
+  </div>
   <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
   <script src="js/jquery-ui.min.js"></script>
-  <script src="js/raindrops.js"></script>
+  <script src="js/particles.min.js"></script>
+  <script src="js/set.js"></script>
   <script>
-  $(function(){
-    // top menu
-    $('a[href ^= "#"]').on('click', function() {
-      var speed = 500; // 移動速度の設定
-      var href = $(this).attr('href'); // 'a[href ^= "#"]'の、href=(ここの内容)を習得
-      var target = href === "#" ? 'html' : href; //hrefが#であればhtml,それ以外はhrefを返す
-      var $target = $(target); // #なら$('html');、#以外なら$('href');
-      var position = $target.offset().top; // $('html');または$('href');の座標を取得
-
-      $('html, body').animate({scrollTop:position}, speed, 'swing');
-        return false;
+    $(function() {
+      $('#menu-btn , .menu-list-item-img').on('click', function() {
+        console.log('hoge');
+        $('.menu-area').animate({width: 'toggle'}, 200);
+        $('#menu-btn-icon').toggleClass('close');
       });
 
       // modal
@@ -343,21 +268,16 @@
         var imgLink = $(this).attr('href');
         var modalHtml = '<div id="gallery-modal-overlay"></div><img id="gallery-modal-img" src="' + imgLink + '" alt="">';
 
-        $('.gallery-contents').append(modalHtml);
-
+        $('.gallery-wrapper').append(modalHtml);
         return false;
       });
 
-      $(document).on('click', '#gallery-modal-overlay', function() {
+      $('.gallery-contents').on('click', '#gallery-modal-overlay', function() {
         $('#gallery-modal-overlay, #gallery-modal-img').fadeOut(function() {
           $('#gallery-modal-overlay, #gallery-modal-img').remove();
         });
       });
       $('#gallery-modal-overlay').off('click', '#gallery-modal-overlay');
-
-
-
-
 
       // slide
       var btnClickFlg = true;
@@ -386,6 +306,7 @@
 
       //ボタンをクリックしたら、データを判別
       $slideButton.on('click', function() {
+        console.log('hoge');
         var btnType = $(this).data('ctrl');// btnのデータ属性を取得
 
         if (!btnFlag) {
@@ -426,97 +347,6 @@
         }, ANIMATION_TIME);
       });
 
-      //About me
-      var serifIndex = 0;
-      var serifListLength = $('.serif-list').find('li').length; //liの個数を取得
-      var serifListHeight = $('.serif-item').height(); // liの幅を取得
-      var serifListPosition = []; // liの幅を格納する空のarrayを作る
-
-      // liの数だけlistPositionにserifListHeightを格納
-      for (var i = 0; i < serifListLength; i++) {
-        serifListPosition.push(serifListHeight * i);
-      }
-
-      // arrayの先頭と末尾を取得
-      var serifTop = serifListPosition[0]; //一番上
-      var serifBottom = serifListPosition[serifListLength - 1]; //一番下
-
-      // ulにliの合計幅を当てる
-      $('.serif-list').css({
-        'height': serifListLength*serifListHeight
-      });
-
-      //buttonクリックで発火
-      $('.more-button').on('click', function(){
-
-        // animation動作時に処理が走らないように制御
-        if(!$('.seriff-list').is(':animated')){
-
-          if (serifListPosition[serifIndex] === serifBottom) {
-            $('.serif-list').css("top", -serifTop);
-            serifListPosition[serifIndex = 0];
-          } else if (serifListPosition[serifIndex] < serifBottom) {
-            serifListPosition[serifIndex++]; //添字プラス1
-            $('.serif-list').css("top", -serifListPosition[serifIndex]);
-          }
-        }
-      });
-
-  // skill
-    $('.photoshop').raindrops({
-      color:'#222',
-      canvasHeight:720,
-      waveLength: 100,
-      waveHeight: 50,
-      rippleSpeed: 0.01,
-      frequency: 0.5,
-      density: 0
-    });
-    $('.illustrator').raindrops({
-      color:'#222',
-      canvasHeight: 640,
-      waveLength: 100,
-      waveHeight: 50,
-      rippleSpeed: 0.01,
-      frequency: 0.5,
-      density: 0
-    });
-    $('.sketch').raindrops({
-      color:'#222',
-      canvasHeight: 640,
-      waveLength: 100,
-      waveHeight: 50,
-      rippleSpeed: 0.01,
-      frequency: 0.5,
-      density: 0
-    });
-    $('.html5').raindrops({
-      color:'#222',
-      canvasHeight: 640,
-      waveLength: 100,
-      waveHeight: 50,
-      rippleSpeed: 0.01,
-      frequency: 0.5,
-      density: 0
-    });
-    $('.css3').raindrops({
-      color:'#222',
-      canvasHeight: 640,
-      waveLength: 100,
-      waveHeight: 50,
-      rippleSpeed: 0.01,
-      frequency: 0.5,
-      density: 0
-    });
-    $('.jquery').raindrops({
-      color:'#222',
-      canvasHeight: 400,
-      waveLength: 100,
-      waveHeight: 50,
-      rippleSpeed: 0.01,
-      frequency: 0.5,
-      density: 0
-    });
     });
   </script>
 </body>
