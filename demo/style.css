@@ -1,1 +1,8 @@
 @charset "UTF-8";
+#video > ogvjs {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
